@@ -1,3 +1,10 @@
 function getComputerChoice(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) + min);
+  let choice = Math.floor(Math.random() * (max - min + 1) + min);
+  if (choice == 1) {
+    return "Rock";
+  } else if (choice == 2) {
+    return "Paper";
+  } else {
+    return "Scissors";
+  }
 }
