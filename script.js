@@ -8,3 +8,6 @@ function getComputerChoice(min, max) {
     return "Scissors";
   }
 }
+
+const playerSelection = "rock";
+const computerSelection = getComputerChoice(1, 3);
