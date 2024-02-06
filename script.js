@@ -13,20 +13,16 @@ function playRound(playerSelection, computerSelection) {
   let win = `You win! ${playerSelection} beats ${computerSelection}!`;
   let lose = `You lose! ${computerSelection} beats ${playerSelection}!`;
   let tie = `Tie round! You both chose ${playerSelection}!`;
-  if (playerSelection == "rock" && computerSelection == "rock") {
+  if (playerSelection == computerSelection) {
     return tie;
   } else if (playerSelection == "rock" && computerSelection == "scissors") {
     return win;
   } else if (playerSelection == "rock" && computerSelection == "paper") {
     return lose;
-  } else if (playerSelection == "paper" && computerSelection == "paper") {
-    return tie;
   } else if (playerSelection == "paper" && computerSelection == "scissors") {
     return lose;
   } else if (playerSelection == "paper" && computerSelection == "rock") {
     return win;
-  } else if (playerSelection == "scissors" && computerSelection == "scissors") {
-    return tie;
   } else if (playerSelection == "scissors" && computerSelection == "rock") {
     return lose;
   } else if (playerSelection == "scissors" && computerSelection == "paper") {
